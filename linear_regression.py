@@ -22,7 +22,9 @@ train_op = tf.train.GradientDescentOptimizer(0.01).minimize(loss)
 
 epoch_number = 10
 progress = TFProgress(
-        total_epoch_number=epoch_number, enable_print_progress_thread=True)
+    total_epoch_number=epoch_number,
+    enable_print_progress_thread=True,
+    print_type=TFProgress.TYPE_PROGRESS_TEXT)
 
 # Create session to run
 with tf.Session() as sess:
@@ -37,5 +39,5 @@ with tf.Session() as sess:
     print("Epoch: {}, w: {}, b: {}".format(epoch, w_value, b_value))
     epoch += 1
 
-    #time.sleep(1.5)
+    time.sleep(1.5)
     progress.increase_current_epoch_number()
