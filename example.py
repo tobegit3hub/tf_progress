@@ -2,7 +2,7 @@
 
 import time
 
-from tf_progress import TFProgress
+from tf_progress.tf_progress import TFProgress
 
 
 def main():
