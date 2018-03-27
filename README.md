@@ -3,12 +3,18 @@
 
 ## Introduction
 
-Easy-to-use library for logging training progress of TensorFlow.
+The easy-to-use library for logging training progress of TensorFlow.
+
+## Installation
+
+```
+pip install tf-progress
+```
 
 ## Usage
 
 ```
-from tf_progress import TFProgress
+from tf_progress.tf_progress import TFProgress
 
 progress = TFProgress(total_epoch_number=10, enable_print_progress_thread=True)
 

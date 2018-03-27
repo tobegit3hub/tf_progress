@@ -4,7 +4,7 @@ import time
 import numpy as np
 import tensorflow as tf
 
-from tf_progress import TFProgress
+from tf_progress.tf_progress import TFProgress
 
 # Prepare train data
 train_X = np.linspace(-1, 1, 100)
@@ -24,7 +24,7 @@ epoch_number = 10
 progress = TFProgress(
     total_epoch_number=epoch_number,
     enable_print_progress_thread=True,
-    print_type=TFProgress.TYPE_PROGRESS_TEXT)
+    display_type=TFProgress.DISPLAY_TYPE_TEXT)
 
 # Create session to run
 with tf.Session() as sess:
