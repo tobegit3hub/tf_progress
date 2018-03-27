@@ -15,11 +15,16 @@ def main():
       total_epoch_number=epoch_number,
       enable_print_progress_thread=True,
       display_type=TFProgress.DISPLAY_TYPE_TEXT)
+
+  progress = TFProgress(
+          total_epoch_number=epoch_number,
+          enable_print_progress_thread=True,
+          display_type=TFProgress.DISPLAY_TYPE_LOCAL_FILE)
   """
   progress = TFProgress(
       total_epoch_number=epoch_number,
       enable_print_progress_thread=True,
-      display_type=TFProgress.DISPLAY_TYPE_FILE)
+      display_type=TFProgress.DISPLAY_TYPE_HTTP_REQUEST)
 
   for i in range(epoch_number):
     time.sleep(1.5)

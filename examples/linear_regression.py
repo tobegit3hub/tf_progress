@@ -24,7 +24,7 @@ epoch_number = 10
 progress = TFProgress(
     total_epoch_number=epoch_number,
     enable_print_progress_thread=True,
-    display_type=TFProgress.DISPLAY_TYPE_TEXT)
+    display_type=TFProgress.DISPLAY_TYPE_STDOUT_TEXT)
 
 # Create session to run
 with tf.Session() as sess:
