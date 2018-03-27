@@ -15,7 +15,7 @@ def main():
       display_type=TFProgress.DISPLAY_TYPE_STDOUT_TEXT)
 
   for i in range(epoch_number):
-    time.sleep(0.5)
+    time.sleep(1.5)
     progress.increase_current_epoch_number()
 
 

@@ -112,7 +112,7 @@ class TFProgress:
       time.sleep(self.print_progress_interval)
 
   def end_of_pregress(self):
-    print("The progress is done")
+    #print("The progress is done")
 
     if self.print_type == TFProgress.DISPLAY_TYPE_STDOUT_TEXT:
       pass
