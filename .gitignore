@@ -1,6 +1,10 @@
 # IDE files
 .idea/
 
+# Output files
+progress.txt
+./examples/progress.txt
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

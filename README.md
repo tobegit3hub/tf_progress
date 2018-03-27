@@ -15,7 +15,7 @@ Now you can visualize the progress of machine learning jobs with [tf_progress](h
 pip install tf_progress
 ```
 
-## Usage
+## Quick Start
 
 Run with the simple APIs and checkout more [examples](./examples/).
 
@@ -28,12 +28,24 @@ for i in range(10):
   progress.increase_current_epoch_number()
 ```
 
-## APIs
+## Advanced Usage
 
 Initialize the TFProgress object.
 
 ```
 progress = TFProgress(total_epoch_number=10)
+```
+
+Choose the display type.
+
+```
+progress = TFProgress(total_epoch_number=10, display_type=TFProgress.DISPLAY_TYPE_STDOUT_TEXT)
+
+progress = TFProgress(total_epoch_number=10, display_type=TFProgress.DISPLAY_TYPE_STDOUT_BAR)
+
+progress = TFProgress(total_epoch_number=10, display_type=TFProgress.DISPLAY_TYPE_LOCAL_FILE)
+
+progress = TFProgress(total_epoch_number=10, display_type=TFProgress.DISPLAY_TYPE_HTTP_REQUEST)
 ```
 
 Set the total epoch number.
